@@ -19,7 +19,7 @@ class BooksGrid extends Component{
               backgroundImage={book.imageLinks.thumbnail}
               title={book.title}
               id={book.id}
-              authors={book.authors}
+              authors={book.authors || [" "]}
               shelf={book.shelf}
               updateBook={bookUpdater}
               bookCopy={book}
